@@ -1,0 +1,78 @@
+JFDML JFormDesigner: "7.0.3.0.337" Java: "11.0.9.1" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class net.miginfocom.swing.MigLayout ) {
+			"$layoutConstraints": "insets 0,hidemode 3"
+			"$columnConstraints": "[fill][fill][fill][fill][grow,fill][fill][fill][fill][fill]"
+			"$rowConstraints": "[80,grow,fill][25,fill][35,fill][25,fill][35,fill][40][40][110,grow,fill]"
+		} ) {
+			name: "loginPanel"
+			"background": new java.awt.Color( 225, 183, 144, 255 )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "name"
+				"text": "Вход"
+				"horizontalAlignment": 0
+				"font": new java.awt.Font( "Arial Black", 1, 40 )
+				"background": new java.awt.Color( 255, 102, 102, 255 )
+				"foreground": new java.awt.Color( 40, 61, 82, 255 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 4 0,align center center,grow 0 0"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "loginName"
+				"text": "Логин"
+				"horizontalAlignment": 0
+				"foreground": &Color0 new java.awt.Color( 0, 0, 0, 255 )
+				"font": &Font0 new java.awt.Font( "Arial", 1, 16 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 4 1"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "loginField"
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 4 2,alignx center,growx 0,width 100:200:250"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "passwordName"
+				"text": "Пароль"
+				"horizontalAlignment": 0
+				"foreground": #Color0
+				"font": #Font0
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 4 3"
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "passwordField"
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 4 4,alignx center,growx 0,width 100:200:250"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "loginButton"
+				"text": "Войти"
+				"font": new java.awt.Font( "Arial", 0, 12 )
+				"border": &EtchedBorder0 new javax.swing.border.EtchedBorder( 1, null, null )
+				"background": new java.awt.Color( 40, 61, 82, 255 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 4 5,align center center,grow 0 0,width 100:150:250,height 30:35:45"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "backButton"
+				"text": "Назад"
+				"font": new java.awt.Font( "Arial", 0, 12 )
+				"border": #EtchedBorder0
+				"background": new java.awt.Color( 40, 61, 82, 255 )
+				"foreground": new java.awt.Color( 255, 255, 255, 255 )
+			}, new FormLayoutConstraints( class net.miginfocom.layout.CC ) {
+				"value": "cell 4 6,align center center,grow 0 0,width 100:150:250,height 30:35:45"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 600, 400 )
+		} )
+	}
+}
